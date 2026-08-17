@@ -6,12 +6,20 @@ const numero = parseFloat(document.getElementById('numero').value);
 // Chama a função para calcular o quadrado
 const resultado = calcularQuadrado(numero);
 // Exibe o resultado na página
-document.getElementById('resultado').textContent = resultado;
+console.log('O quadrado de', numero, 'é', resultado);
+document.getElementById('resultadoQuadrado').textContent = resultado;
+// Chama a função para calcular o cubo
+const resultadoCubo = calcularCubo(numero);
+// Exibe o resultado na página
+console.log('O cubo de', numero, 'é', resultadoCubo);
+document.getElementById('resultadoCubo').textContent = resultadoCubo;
 });
 function calcularQuadrado(numero) {
 return numero * numero;
 }
-Parte JavaScritp
+function calcularCubo(numero) {
+return numero * numero * numero;
+}
 
 
 
